@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Task2 Form</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        <form action="" class="form">
+            <div class="from__section">
+                <h1 class="form__header">Регистрация</h1>
+            </div>
+            <div class="from__section from__section_input-fields">
+                <label for="email" class="from__label">E-mail</label>
+                <input type="email" id="email" name="email" placeholder="example@site.domain" class="form__input" minlength="6" maxlength="30" required >
+                <div class="form__row-wrap">
+                    <div class="form__grid">
+                        <label for="password" class="from__label">Пароль</label>
+                        <input type="password" name="password" id="password" placeholder="password" maxlength="30" class="form__input" required >
+                    </div>
+                    <div class="form__grid">
+                        <label for="repeat-password" class="from__label">Повторите пароль</label>
+                        <input type="password" name="password-repeat" id="repeat-password" placeholder="password"  maxlength="30" class="form__input" required >
+                    </div>
+                </div>
+                <label for="full-name" class="from__label">ФИО</label>
+                <input type="text" id="full-name" name="full-name" placeholder="Игорев Игорь Игоревич" maxlength="50" class="form__input" required >
+                <div class="form__row-wrap">
+                    <div class="form__grid">
+                        <label for="age" class="from__label">Возраст</label>
+                        <input type="number" name="age" id="age" placeholder="18" class="form__input" min="1" max="110" required >
+                    </div>
+                </div>
+            </div>
+            <div class="from__section form__section_buttons">
+                <input type="submit" class="from__submit btn">
+                <input type="button" class="from__cansel btn" value="Отмена">
+            </div>
+        </form>
+    </div>
+</body>
+</html>
